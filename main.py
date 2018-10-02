@@ -42,12 +42,7 @@ def pr(bot, update):
 
     name = update.message.from_user.username
     if name is not None and name.lower() in config.prpr_back:
-        text += '我把钱都换成美金了，没钱给你了' + update.message.from_user.username + ' '
-
-    if random.randint(1, 100) <= config.react_rate:
-        text += random.choice(config.react_emoticons)
-    else:
-        text += config.default_emoticon
+        text += '我把钱都换成美金了，没钱给你了' + update.message.from_user.username 
 
     update.message.reply_text(text)
 
@@ -56,7 +51,9 @@ def pr_other(bot, update):
     update.message.reply_text(config.other_emoticon)
 
 def dressing(bot, update):
-    update.message.reply_text(config.dressing_message)
+    dressing_text = ''
+    dressing_text += '已经成功为 ' + update.message.from_user.username + ' 穿上女装'
+    update.message.reply_text(dressing_text)
 
 def debug(bot, update):
     print(update.message.text)

@@ -4,7 +4,7 @@ Source code for Telegram @chriswallet_bot. Based on kotomei_bot
 # Getting started
 ## Requirements
 ```
-python
+python 3.6 ^
 pip
 git
 ```
@@ -32,3 +32,5 @@ Then, just simply type and enter
 $ python main.py
 ```
 If you did all the things above corrently, your bot should run successfully with absolutely no problem whatsoever.
+
+To disable the log feature, please change the bool value of `full_log` in config.py to `False`

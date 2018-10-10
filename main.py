@@ -41,20 +41,20 @@ def givememoney_list(bot, update):
     text = ''
     name = update.message.from_user.username
 
-    if name is not None and name.lower() in config.prpr_back:
+    if name is not None and name.lower() in config.offer_money_list:
         text += '账单已提交，请老板查收 @' + update.message.from_user.username 
         update.message.reply_text(text)
     else: 
         if random.randint(1, 100) <= config.react_rate:
-            text += random.choice(config.react_emoticons)
+            text += random.choice(config.chris_qoute)
             update.message.reply_text(text)
         else:
-            text += config.default_emoticon
-            update.message.reply_text(config.other_emoticon)
+            text += config.default_qoute
+            update.message.reply_text(config.chris_qoute)
     
 
 def givememoney(bot, update):
-    update.message.reply_text(config.other_emoticon)
+    update.message.reply_text(config.chris_qoute)
 
 
 def dressing(bot, update):
@@ -75,7 +75,7 @@ def debug(bot, update):
 def main():
     # logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-    config.prpr_back = [name.lower() for name in config.prpr_back]
+    config.offer_money_list = [name.lower() for name in config.offer_money_list]
     config.dressing_special_list = [name.lower() for name in config.dressing_special_list]
 
     updater = Updater(config.token)

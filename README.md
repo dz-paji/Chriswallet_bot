@@ -27,10 +27,13 @@ git clone https://github.com/dz-paji/Chriswallet_bot
 ## Configuration 
 Please fill in the token field in config.py which is the token of your telegram bot. To check or reset the token, please ask [@BotFather](https:t.me/BotFather)
 
-Then, just simply type and enter
+To run this bot, you just need to enter the following command.
 ```
 $ python main.py
 ```
 If you did all the things above corrently, your bot should run successfully with absolutely no problem whatsoever.
 
-To disable the log feature, please change the bool value of `full_log` in config.py to `False`
+To prevent program display logs , please change the bool value of `full_log` in `config.py` to `False`
+To disable debug mode, please comment line 86 in `main.py`
+
+

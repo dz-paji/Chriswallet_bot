@@ -62,9 +62,9 @@ def dressing(bot, update):
     name = update.message.from_user.username
 
     if name is not None and name.lower() in config.dressing_special_list:
-        update.message.reply_text('主人是不可用女装的！')
+        update.message.reply_text('主人是不可以女装的！')
     else:
-        dressing_text += '已经成功为 @' + update.message.from_user.username + ' 套上女装'
+        dressing_text += '@' + update.message.from_user.username + ' 没经过任何反抗就被套上了女装'
         update.message.reply_text(dressing_text)
 
 

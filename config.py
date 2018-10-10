@@ -9,5 +9,5 @@ offer_money_list = ['chris1004tw','dz_paji']
 dressing_special_list = ['dz_paji','chris1004tw']
 #dressing_message = '女装成功'
 #dressing_success_rate = 50
-#dressing_process
+#dressing_process = ['','','','']
 full_log = True

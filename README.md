@@ -31,7 +31,7 @@ To run this bot, you just need to enter the following command.
 ```
 $ python main.py
 ```
-If you did all the things above corrently, your bot should run successfully with absolutely no problem whatsoever.
+If you did all the things above correctly, your bot should run successfully with absolutely no problem whatsoever.
 
 To prevent program display logs , please change the bool value of `full_log` in `config.py` to `False`
 To disable debug mode, please comment line 86 in `main.py`

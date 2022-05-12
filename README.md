@@ -11,7 +11,7 @@ git
 ```
 
 ## Installing
-To run this bot, you will need to instal [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) first.
+To run this bot, you will need to install [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) first.
 
 ``` bash
 $ pip install python-telegram-bot
